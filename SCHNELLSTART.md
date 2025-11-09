@@ -23,18 +23,18 @@ Die Präsentation ist sofort einsatzbereit - keine Installation, kein Login, kei
 
 ---
 
-## 📌 Wichtige Folien-Nummern:
+## 📌 Folien-Übersicht (19 Folien):
 
-| Phase | Folien | Inhalt |
-|-------|--------|--------|
-| **Einstieg** | 1-5 | Tierbeispiele, erste Begegnung |
-| **Adjektive** | 6-7 | Was sind Adjektive? |
-| **Adverbien** | 8-10 | Was sind Adverbien? |
-| **Regel** | 11-14 | Bildungsregel + Übungen |
-| **Anchor Chart** | 15-20 | Grammatikübersicht |
-| **Praxis** | 21-24 | Partnerarbeit + Übungen |
-| **Abschluss** | 25-27 | Exit Ticket + Hausaufgaben |
-| **Referenz** | 29 | Zum Ausdrucken für Schüler |
+| Phase | Folien | Ziel | Inhalt |
+|-------|--------|------|--------|
+| **Phase 1** | 2-4 | Passive Input | Tierbeispiele (Schildkröte, Gepard) |
+| **Phase 2** | 5-8 | Verstehen | Adjektive + Adverbien erklärt |
+| **Phase 3** | 9-11 | Reproduzieren | Regel + Übungen |
+| **Phase 4** | 12-13 | Bewusstmachung | Anchor Chart + Irregular Forms |
+| **Phase 5** | 14-15 | Produzieren | Partnerarbeit (freie Kommunikation) |
+| **Abschluss** | 16-19 | Assessment | Exit Ticket, Homework, Referenz |
+
+✅ **Keine Redundanz** - jede Folie hat einen einzigartigen pädagogischen Zweck
 
 ---
 
