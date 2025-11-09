@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unterrichtsskizze - Adjectives vs Adverbs</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 15mm;
+            }
+            .no-print {
+                display: none;
+            }
+            table {
+                page-break-inside: auto;
+            }
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.4;
+            max-width: 210mm;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18pt;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .header-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 25px;
+            font-size: 10pt;
+        }
+
+        .info-field {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .info-field label {
+            font-weight: bold;
+            margin-right: 5px;
+            white-space: nowrap;
+        }
+
+        .info-field .fill-line {
+            flex: 1;
+            border-bottom: 1px solid #333;
+            min-width: 100px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        .section-content {
+            font-size: 10pt;
+            line-height: 1.6;
+            margin-left: 10px;
+        }
+
+        .goals-list {
+            margin: 5px 0 0 25px;
+            font-size: 10pt;
+        }
+
+        .goals-list li {
+            margin-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 9pt;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 8px 5px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #2c3e50;
+        }
+
+        td {
+            padding: 8px 5px;
+            border: 1px solid #bdc3c7;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .phase-row {
+            background-color: #ecf0f1 !important;
+            font-weight: bold;
+        }
+
+        .time-col {
+            width: 8%;
+            text-align: center;
+        }
+
+        .phase-col {
+            width: 12%;
+            font-weight: bold;
+        }
+
+        .teacher-col {
+            width: 25%;
+        }
+
+        .student-col {
+            width: 20%;
+        }
+
+        .social-col {
+            width: 15%;
+        }
+
+        .media-col {
+            width: 20%;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .print-button:hover {
+            background-color: #2980b9;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .green {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .blue {
+            color: #2980b9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">🖨️ Drucken</button>
+
+    <div class="container">
+        <h1>Unterrichtsskizze im Fach Englisch</h1>
+
+        <div class="header-info">
+            <div class="info-field">
+                <label>Name Studierende(r):</label>
+                <span class="fill-line"></span>
+            </div>
+            <div class="info-field">
+                <label>Schule:</label>
+                <span class="fill-line">RSM</span>
+            </div>
+            <div class="info-field">
+                <label>Klasse:</label>
+                <span class="fill-line">7</span>
+            </div>
+            <div class="info-field">
+                <label>Raum:</label>
+                <span class="fill-line"></span>
+            </div>
+            <div class="info-field">
+                <label>Datum:</label>
+                <span class="fill-line"></span>
+            </div>
+            <div class="info-field">
+                <label>Uhrzeit:</label>
+                <span class="fill-line"></span>
+            </div>
+            <div class="info-field">
+                <label>Ausbildungslehrer(in):</label>
+                <span class="fill-line"></span>
+            </div>
+            <div class="info-field">
+                <label>Betreuer:</label>
+                <span class="fill-line"></span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Thema der Stunde:</div>
+            <div class="section-content">
+                Einführung "Adjectives and Adverbs" - Unterscheidung und Anwendung
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Grobziel:</div>
+            <div class="section-content">
+                Die Schülerinnen und Schüler verstehen den Unterschied zwischen Adjektiven und Adverbien und können beide Wortarten in einfachen Kontexten erkennen und anwenden.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Feinziele:</div>
+            <ul class="goals-list">
+                <li>Die SuS können Adjektive als Wortart erkennen, die Nomen beschreiben</li>
+                <li>Die SuS können Adverbien als Wortart identifizieren, die Verben beschreiben</li>
+                <li>Die SuS können einfache Adverbien aus Adjektiven durch Anhängen von -ly bilden (inkl. Sonderregel -y → -ily)</li>
+                <li>Die SuS können zwischen Adjektiven und Adverbien in einfachen Sätzen unterscheiden</li>
+                <li>Die SuS kennen die korrekte Position von Adjektiven (vor dem Nomen oder nach "be") und Adverbien (nach dem Verb)</li>
+                <li>Die SuS kennen die wichtigsten unregelmäßigen Formen (good → well, fast → fast, hard → hard)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Methodischer Rahmen:</div>
+            <div class="section-content">
+                5-Phasen-Modell nach Ziegesar (erwerbsorientierte Methode)
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="time-col">Zeit</th>
+                    <th class="phase-col">Phase</th>
+                    <th class="teacher-col">Lehreraktivität<br>(Fragen / Arbeitsauftrag)</th>
+                    <th class="student-col">Schüleraktivität<br>(erwartete Reaktionen)</th>
+                    <th class="social-col">Sozialform /<br>Feinziel</th>
+                    <th class="media-col">Medien /<br>didakt. Kommentar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- PHASE 1: DEMONSTRATION -->
+                <tr class="phase-row">
+                    <td colspan="6" style="text-align: center; font-size: 10pt;">
+                        <strong>PHASE 1: DEMONSTRATION</strong> (Passive Begegnung mit Strukturen in authentischem Kontext)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">0-2 Min</td>
+                    <td class="phase-col">Einstieg</td>
+                    <td class="teacher-col">
+                        L zeigt Folie mit Tieremojis (🐢 🐆)<br>
+                        "Today we're going to talk about describing words. Let's look at some animals!"
+                    </td>
+                    <td class="student-col">
+                        SuS schauen aufmerksam zu, zeigen Interesse an den Tieren
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Motivation schaffen, Neugier wecken
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 2)<br><br>
+                        Visueller Einstieg aktiviert Vorwissen über Tiere
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">2-5 Min</td>
+                    <td class="phase-col">Demo: Schildkröte</td>
+                    <td class="teacher-col">
+                        L erzählt über die Schildkröte, betont farbig markierte Wörter:<br>
+                        "This is a <span class="green">slow</span> turtle. The turtle is <span class="green">small</span> and <span class="green">green</span>. The turtle moves <span class="blue">slowly</span>. It swims <span class="blue">happily</span>."
+                    </td>
+                    <td class="student-col">
+                        SuS hören zu, beobachten die farbigen Markierungen (grün/blau)
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Erste passive Begegnung mit Adjektiven und Adverbien
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 3)<br><br>
+                        Farbcodierung: <span class="green">grün</span> = Adjektive, <span class="blue">blau</span> = Adverbien
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">5-8 Min</td>
+                    <td class="phase-col">Demo: Gepard</td>
+                    <td class="teacher-col">
+                        L zeigt Kontrast mit Gepard:<br>
+                        "And here we have a <span class="green">fast</span> cheetah. The cheetah is <span class="green">big</span> and <span class="green">strong</span>. The cheetah runs <span class="blue">quickly</span>!"
+                    </td>
+                    <td class="student-col">
+                        SuS nehmen Kontrast wahr (slow/fast), beginnen Muster zu erkennen
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Kontrastierung unterstützt Mustererkennung
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 4)<br><br>
+                        Authentischer Input ohne explizite Erklärung (Ziegesar Phase 1)
+                    </td>
+                </tr>
+
+                <!-- PHASE 2: VERSTEHEN UND REAGIEREN -->
+                <tr class="phase-row">
+                    <td colspan="6" style="text-align: center; font-size: 10pt;">
+                        <strong>PHASE 2: VERSTEHEN UND REAGIEREN</strong> (Verständnis ohne eigene Produktion)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">8-11 Min</td>
+                    <td class="phase-col">Adjektive erkennen</td>
+                    <td class="teacher-col">
+                        L erklärt: "These words describe <strong>NOUNS</strong>. They answer: <strong>WHAT KIND?</strong> These are called <span class="green">ADJECTIVES</span>."<br><br>
+                        L zeigt Beispiele: the slow turtle, the green turtle
+                    </td>
+                    <td class="student-col">
+                        SuS verstehen Funktion von Adjektiven, nicken, zeigen Verständnis
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Feinziel: SuS können Adjektive als Wortart erkennen
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 5)<br><br>
+                        Erste explizite Einführung der Begriffe
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">11-13 Min</td>
+                    <td class="phase-col">Show-Me Activity</td>
+                    <td class="teacher-col">
+                        L stellt Fragen:<br>
+                        "Is the cheetah slow? 👍👎"<br>
+                        "Is the cheetah fast? 👍👎"<br>
+                        "Is the turtle green? 👍👎"
+                    </td>
+                    <td class="student-col">
+                        SuS zeigen Daumen hoch/runter, reagieren physisch ohne verbale Produktion
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Verständniskontrolle ohne Sprechzwang
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 6)<br><br>
+                        Kinästhetisches Element aktiviert alle SuS
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">13-16 Min</td>
+                    <td class="phase-col">Adverbien erkennen</td>
+                    <td class="teacher-col">
+                        L erklärt: "These words describe <strong>VERBS</strong>. They answer: <strong>HOW?</strong> These are called <span class="blue">ADVERBS</span>."<br><br>
+                        L zeigt: moves slowly, runs quickly
+                    </td>
+                    <td class="student-col">
+                        SuS verstehen Funktion von Adverbien, vergleichen mit Adjektiven
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Feinziel: SuS können Adverbien als Wortart identifizieren
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 7)<br><br>
+                        Parallele Struktur zu Adjektiv-Einführung
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">16-20 Min</td>
+                    <td class="phase-col">Vergleich</td>
+                    <td class="teacher-col">
+                        L zeigt Side-by-Side Vergleich:<br>
+                        <span class="green">slow</span> turtle vs. moves <span class="blue">slowly</span><br>
+                        <span class="green">quick</span> breakfast vs. eats <span class="blue">quickly</span>
+                    </td>
+                    <td class="student-col">
+                        SuS erkennen Muster, sehen Beziehung zwischen Adjektiv und Adverb
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Visuelle Gegenüberstellung fördert Mustererkennung
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 8)<br><br>
+                        Zweispaltige Darstellung macht Unterschied deutlich
+                    </td>
+                </tr>
+
+                <!-- PHASE 3: REPRODUZIEREN -->
+                <tr class="phase-row">
+                    <td colspan="6" style="text-align: center; font-size: 10pt;">
+                        <strong>PHASE 3: REPRODUZIEREN</strong> (Geleitete Reproduktion mit Gerüst)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">20-23 Min</td>
+                    <td class="phase-col">Bildungsregel</td>
+                    <td class="teacher-col">
+                        L zeigt Regel:<br>
+                        <span class="highlight">ADJECTIVE + -ly = ADVERB</span><br><br>
+                        careful → carefully<br>
+                        quick → quickly<br><br>
+                        ⚠️ <strong>Sonderfall:</strong><br>
+                        Wörter auf -y → -ily<br>
+                        happ<strong>y</strong> → happ<strong>ily</strong>
+                    </td>
+                    <td class="student-col">
+                        SuS verstehen Bildungsregel, achten auf Schreibweise bei -y Endungen
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Feinziel: SuS können Adverbien bilden (inkl. -y → -ily)
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 9)<br><br>
+                        Visuelle Hervorhebung der Schreibregel wichtig für A2
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">23-25 Min</td>
+                    <td class="phase-col">Choral Repetition</td>
+                    <td class="teacher-col">
+                        L spricht vor, Klasse wiederholt im Chor:<br>
+                        "The slow turtle"<br>
+                        "The turtle moves slowly"<br>
+                        "The happy girl"<br>
+                        "The girl sings happily"
+                    </td>
+                    <td class="student-col">
+                        SuS sprechen im Chor nach, üben Aussprache und Strukturen
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Chorisches Sprechen gibt Sicherheit
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 10)<br><br>
+                        Mündliche Übung vor schriftlicher Phase
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">25-28 Min</td>
+                    <td class="phase-col">Lückentext</td>
+                    <td class="teacher-col">
+                        L teilt Arbeitsblatt aus (differenziert):<br>
+                        "Fill in the blanks using the word bank."<br><br>
+                        Wortbank: slow, slowly, quick, quickly, beautiful, beautifully
+                    </td>
+                    <td class="student-col">
+                        <strong>Gruppe A:</strong> nutzt Wortbank + Bilder<br>
+                        <strong>Gruppe B:</strong> nutzt nur Wortbank<br>
+                        <strong>Gruppe C:</strong> eigene Sätze bilden
+                    </td>
+                    <td class="social-col">
+                        <strong>Einzelarbeit</strong><br><br>
+                        Differenzierung nach Leistungsniveau
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 11) + <strong>Arbeitsblätter</strong> (3 Versionen)<br><br>
+                        Scaffolding für schwächere SuS
+                    </td>
+                </tr>
+
+                <!-- PHASE 4: BEWUSSTMACHUNG -->
+                <tr class="phase-row">
+                    <td colspan="6" style="text-align: center; font-size: 10pt;">
+                        <strong>PHASE 4: BEWUSSTMACHUNG</strong> (Explizite Regelformulierung)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">28-31 Min</td>
+                    <td class="phase-col">Anchor Chart</td>
+                    <td class="teacher-col">
+                        L erstellt mit SuS gemeinsam Anchor Chart:<br><br>
+                        <span class="green">ADJECTIVES:</span><br>
+                        • Describe NOUNS<br>
+                        • Position: BEFORE noun OR AFTER "be"<br>
+                        • Answer: WHAT KIND?<br><br>
+                        <span class="blue">ADVERBS:</span><br>
+                        • Describe VERBS<br>
+                        • Position: AFTER verb<br>
+                        • Answer: HOW?
+                    </td>
+                    <td class="student-col">
+                        SuS helfen beim Formulieren der Regeln, ergänzen Beispiele, notieren in Heft
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Feinziel: SuS kennen Position und Funktion beider Wortarten
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 12) + <strong>Plakat</strong><br><br>
+                        Anchor Chart bleibt dauerhaft im Klassenraum
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">31-33 Min</td>
+                    <td class="phase-col">Irregulars</td>
+                    <td class="teacher-col">
+                        L zeigt Ausnahmen:<br><br>
+                        ⚠️ <span class="green">good</span> → <span class="blue">well</span><br>
+                        (NOT goodly!)<br><br>
+                        <span class="green">fast</span> → <span class="blue">fast</span><br>
+                        <span class="green">hard</span> → <span class="blue">hard</span><br>
+                        (stay the same!)
+                    </td>
+                    <td class="student-col">
+                        SuS erkennen Ausnahmen, verstehen dass nicht alle Adverbien -ly haben
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Feinziel: SuS kennen wichtigste unregelmäßige Formen
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 13)<br><br>
+                        Warnsymbol macht Ausnahmecharakter deutlich
+                    </td>
+                </tr>
+
+                <!-- PHASE 5: PRODUZIEREN -->
+                <tr class="phase-row">
+                    <td colspan="6" style="text-align: center; font-size: 10pt;">
+                        <strong>PHASE 5: PRODUZIEREN</strong> (Freie Produktion in bedeutungsvollem Kontext)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">33-35 Min</td>
+                    <td class="phase-col">Partner-aktivität: Einführung</td>
+                    <td class="teacher-col">
+                        L erklärt Aufgabe:<br>
+                        "Tell your partner about your morning today. Use adjectives AND adverbs!"<br><br>
+                        L modelliert Beispiel:<br>
+                        "I woke up early. I was tired. I ate a quick breakfast. I ate quickly."
+                    </td>
+                    <td class="student-col">
+                        SuS hören zu, verstehen Aufgabe, denken über ihren Morgen nach
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Modellierung gibt Orientierung
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 14)<br><br>
+                        Authentischer Kommunikationsanlass
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">35-37 Min</td>
+                    <td class="phase-col">Think Phase</td>
+                    <td class="teacher-col">
+                        L gibt Denkzeit:<br>
+                        "Think about your morning. Make notes."<br><br>
+                        Für schwächere SuS: Sentence Frames verfügbar
+                    </td>
+                    <td class="student-col">
+                        SuS denken nach, machen Notizen, schwächere SuS nutzen Sentence Frames
+                    </td>
+                    <td class="social-col">
+                        <strong>Einzelarbeit</strong><br><br>
+                        Individuelle Vorbereitung reduziert Sprechangst
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 15) + <strong>Sentence Frame Cards</strong><br><br>
+                        Differenzierung durch optionale Hilfen
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">37-40 Min</td>
+                    <td class="phase-col">Pair + Share</td>
+                    <td class="teacher-col">
+                        L: "Now tell your partner!"<br><br>
+                        L geht herum, hört zu, gibt Hilfestellung, notiert Fehler für später
+                    </td>
+                    <td class="student-col">
+                        SuS erzählen in Partnerarbeit über ihren Morgen, verwenden Adjektive und Adverbien frei
+                    </td>
+                    <td class="social-col">
+                        <strong>Partnerarbeit</strong><br><br>
+                        Feinziel: Freie Anwendung in authentischer Kommunikation
+                    </td>
+                    <td class="media-col">
+                        <strong>Partnerarbeit</strong><br><br>
+                        L beobachtet, gibt kein direktes Feedback (erst später)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">40-42 Min</td>
+                    <td class="phase-col">Präsentation (optional)</td>
+                    <td class="teacher-col">
+                        L: "Would anyone like to share with the class?"<br><br>
+                        2-3 Freiwillige präsentieren
+                    </td>
+                    <td class="student-col">
+                        2-3 freiwillige SuS präsentieren ihre Sätze vor der Klasse
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Nur freiwillige Präsentation
+                    </td>
+                    <td class="media-col">
+                        Wertschätzung der Schülerleistungen
+                    </td>
+                </tr>
+
+                <!-- ABSCHLUSS -->
+                <tr class="phase-row">
+                    <td colspan="6" style="text-align: center; font-size: 10pt;">
+                        <strong>ABSCHLUSS UND SICHERUNG</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">42-44 Min</td>
+                    <td class="phase-col">Exit Ticket</td>
+                    <td class="teacher-col">
+                        L teilt Exit Tickets aus (differenziert):<br><br>
+                        <strong>Version A:</strong> Adjektive/Adverbien markieren<br>
+                        <strong>Version B:</strong> Lücken füllen<br>
+                        <strong>Version C:</strong> Eigene Sätze schreiben
+                    </td>
+                    <td class="student-col">
+                        SuS füllen Exit Ticket individuell aus, geben beim Hinausgehen ab
+                    </td>
+                    <td class="social-col">
+                        <strong>Einzelarbeit</strong><br><br>
+                        Lernstandskontrolle
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 16) + <strong>Exit Ticket Zettel</strong><br><br>
+                        Diagnose für Folgestunde
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time-col">44-45 Min</td>
+                    <td class="phase-col">Hausaufgabe + Verabschiedung</td>
+                    <td class="teacher-col">
+                        L zeigt Hausaufgabe:<br>
+                        "Write 5 sentences about your favorite animal or sport. Use at least 3 adjectives and 3 adverbs."<br><br>
+                        L sammelt Exit Tickets ein
+                    </td>
+                    <td class="student-col">
+                        SuS notieren Hausaufgabe, verlassen geordnet den Raum
+                    </td>
+                    <td class="social-col">
+                        <strong>Plenum</strong><br><br>
+                        Festigung für zu Hause
+                    </td>
+                    <td class="media-col">
+                        <strong>Präsentation</strong> (Folie 17)<br><br>
+                        Differenzierte HA-Optionen möglich
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section" style="margin-top: 25px;">
+            <div class="section-title">Didaktischer Kommentar:</div>
+            <div class="section-content">
+                Die Stunde folgt dem <strong>5-Phasen-Modell nach Ziegesar</strong>, das einen erwerbsorientierten Ansatz verfolgt. SuS begegnen den Strukturen zunächst <strong>passiv in authentischem Kontext</strong> (Phase 1), bevor explizite Erklärungen folgen (Phase 2). Die <strong>Progression von geleiteter zu freier Produktion</strong> (Phase 3-5) gibt allen SuS die Möglichkeit, auf ihrem Niveau erfolgreich zu sein. Die durchgängige <strong>Farbcodierung</strong> (grün für Adjektive, blau für Adverbien) und das <strong>Anchor Chart</strong> dienen als dauerhafte Lernhilfen. Die <strong>Differenzierung</strong> erfolgt durch verschiedene Arbeitsblätter, Sentence Frames und Exit Tickets, um der heterogenen Leistung der Klasse (A2, mittel bis schwach) gerecht zu werden.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
