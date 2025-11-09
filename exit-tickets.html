@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exit Tickets - Adjectives vs Adverbs (Differentiated)</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 10mm;
+            }
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+            .ticket {
+                page-break-inside: avoid;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .print-button:hover {
+            background-color: #2980b9;
+        }
+
+        .instructions {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .instructions h2 {
+            margin-top: 0;
+            color: #856404;
+        }
+
+        .ticket-section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            background-color: #34495e;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+
+        .ticket-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .ticket {
+            background-color: white;
+            border: 2px dashed #95a5a6;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .ticket::before {
+            content: '✂️';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            font-size: 20px;
+            background-color: #f5f5f5;
+            padding: 0 5px;
+        }
+
+        .ticket-title {
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+
+        .ticket-content {
+            font-size: 10pt;
+            line-height: 1.8;
+        }
+
+        .name-line {
+            border-bottom: 1px solid #333;
+            display: inline-block;
+            min-width: 150px;
+            margin-left: 5px;
+        }
+
+        .answer-line {
+            border-bottom: 1px solid #333;
+            display: inline-block;
+            min-width: 100px;
+            margin: 0 5px;
+        }
+
+        .sentence-box {
+            border: 1px solid #bdc3c7;
+            padding: 10px;
+            margin: 10px 0;
+            min-height: 40px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .word-bank {
+            background-color: #e8f5e9;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border: 1px solid #4caf50;
+        }
+
+        .highlight-green {
+            background-color: #d5f4e6;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .highlight-blue {
+            background-color: #d6eaf8;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        .task-instruction {
+            background-color: #fff9e6;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            border-left: 3px solid #ffc107;
+            font-size: 9.5pt;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        .level-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 9pt;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .level-a {
+            background-color: #d5f4e6;
+            color: #27ae60;
+        }
+
+        .level-b {
+            background-color: #fef3cd;
+            color: #856404;
+        }
+
+        .level-c {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">🖨️ Print Exit Tickets</button>
+
+    <div class="instructions no-print">
+        <h2>📋 Anleitung für Lehrkräfte</h2>
+        <p><strong>Differenzierte Exit Tickets:</strong> Wählen Sie die passende Version für jeden Schüler basierend auf dem Leistungsniveau.</p>
+        <ul>
+            <li><strong>Version A</strong> (Grün): Für schwächere SuS - Markierungsaufgabe mit visueller Unterstützung</li>
+            <li><strong>Version B</strong> (Gelb): Für mittlere SuS - Lückentext mit Wortauswahl</li>
+            <li><strong>Version C</strong> (Rot): Für stärkere SuS - Freie Satzproduktion</li>
+        </ul>
+        <p><strong>Tipp:</strong> Drucken Sie auf farbigem Papier entsprechend dem Niveau (grün/gelb/rot) für einfache Sortierung!</p>
+    </div>
+
+    <!-- VERSION A: Für schwächere SuS -->
+    <div class="ticket-section">
+        <div class="section-header">
+            Version A <span class="level-badge level-a">Basic Level</span> - Für schwächere Schüler
+        </div>
+
+        <div class="ticket-container">
+            <!-- Ticket A1 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Circle the <span class="highlight-green">adjectives</span> GREEN and the <span class="highlight-blue">adverbs</span> BLUE.
+                    </div>
+
+                    <p style="margin: 15px 0; line-height: 2;">
+                        1. The <u style="padding: 0 20px;"></u> happy <u style="padding: 0 20px;"></u> girl sings <u style="padding: 0 20px;"></u> beautifully <u style="padding: 0 20px;"></u>.
+                    </p>
+
+                    <p style="margin: 15px 0; line-height: 2;">
+                        2. The <u style="padding: 0 20px;"></u> fast <u style="padding: 0 20px;"></u> car drives <u style="padding: 0 20px;"></u> quickly <u style="padding: 0 20px;"></u>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ticket A2 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Circle the <span class="highlight-green">adjectives</span> GREEN and the <span class="highlight-blue">adverbs</span> BLUE.
+                    </div>
+
+                    <p style="margin: 15px 0; line-height: 2;">
+                        1. The <u style="padding: 0 20px;"></u> happy <u style="padding: 0 20px;"></u> girl sings <u style="padding: 0 20px;"></u> beautifully <u style="padding: 0 20px;"></u>.
+                    </p>
+
+                    <p style="margin: 15px 0; line-height: 2;">
+                        2. The <u style="padding: 0 20px;"></u> fast <u style="padding: 0 20px;"></u> car drives <u style="padding: 0 20px;"></u> quickly <u style="padding: 0 20px;"></u>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ticket A3 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Circle the <span class="highlight-green">adjectives</span> GREEN and the <span class="highlight-blue">adverbs</span> BLUE.
+                    </div>
+
+                    <p style="margin: 15px 0; line-height: 2;">
+                        1. The <u style="padding: 0 20px;"></u> happy <u style="padding: 0 20px;"></u> girl sings <u style="padding: 0 20px;"></u> beautifully <u style="padding: 0 20px;"></u>.
+                    </p>
+
+                    <p style="margin: 15px 0; line-height: 2;">
+                        2. The <u style="padding: 0 20px;"></u> fast <u style="padding: 0 20px;"></u> car drives <u style="padding: 0 20px;"></u> quickly <u style="padding: 0 20px;"></u>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ticket A4 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Circle the <span class="highlight-green">adjectives</span> GREEN and the <span class="highlight-blue">adverbs</span> BLUE.
+                    </div>
+
+                    <p style="margin: 15px 0; line-height: 2;">
+                        1. The <u style="padding: 0 20px;"></u> happy <u style="padding: 0 20px;"></u> girl sings <u style="padding: 0 20px;"></u> beautifully <u style="padding: 0 20px;"></u>.
+                    </p>
+
+                    <p style="margin: 15px 0; line-height: 2;">
+                        2. The <u style="padding: 0 20px;"></u> fast <u style="padding: 0 20px;"></u> car drives <u style="padding: 0 20px;"></u> quickly <u style="padding: 0 20px;"></u>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- VERSION B: Für mittlere SuS -->
+    <div class="ticket-section">
+        <div class="section-header">
+            Version B <span class="level-badge level-b">Medium Level</span> - Für mittlere Schüler
+        </div>
+
+        <div class="ticket-container">
+            <!-- Ticket B1 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Fill in the correct word: <strong>beautiful</strong> or <strong>beautifully</strong>
+                    </div>
+
+                    <p style="margin: 15px 0;">
+                        1. She has a <span class="answer-line"></span> voice.
+                    </p>
+
+                    <p style="margin: 15px 0;">
+                        2. She sings <span class="answer-line"></span>.
+                    </p>
+
+                    <hr style="margin: 20px 0;">
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Fill in: <strong>quick</strong> or <strong>quickly</strong>
+                    </div>
+
+                    <p style="margin: 15px 0;">
+                        3. He is a <span class="answer-line"></span> runner.
+                    </p>
+
+                    <p style="margin: 15px 0;">
+                        4. He runs <span class="answer-line"></span>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ticket B2 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Fill in the correct word: <strong>beautiful</strong> or <strong>beautifully</strong>
+                    </div>
+
+                    <p style="margin: 15px 0;">
+                        1. She has a <span class="answer-line"></span> voice.
+                    </p>
+
+                    <p style="margin: 15px 0;">
+                        2. She sings <span class="answer-line"></span>.
+                    </p>
+
+                    <hr style="margin: 20px 0;">
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Fill in: <strong>quick</strong> or <strong>quickly</strong>
+                    </div>
+
+                    <p style="margin: 15px 0;">
+                        3. He is a <span class="answer-line"></span> runner.
+                    </p>
+
+                    <p style="margin: 15px 0;">
+                        4. He runs <span class="answer-line"></span>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ticket B3 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Fill in the correct word: <strong>careful</strong> or <strong>carefully</strong>
+                    </div>
+
+                    <p style="margin: 15px 0;">
+                        1. She is a <span class="answer-line"></span> driver.
+                    </p>
+
+                    <p style="margin: 15px 0;">
+                        2. She drives <span class="answer-line"></span>.
+                    </p>
+
+                    <hr style="margin: 20px 0;">
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Fill in: <strong>slow</strong> or <strong>slowly</strong>
+                    </div>
+
+                    <p style="margin: 15px 0;">
+                        3. The <span class="answer-line"></span> turtle moves <span class="answer-line"></span>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ticket B4 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Fill in the correct word: <strong>careful</strong> or <strong>carefully</strong>
+                    </div>
+
+                    <p style="margin: 15px 0;">
+                        1. She is a <span class="answer-line"></span> driver.
+                    </p>
+
+                    <p style="margin: 15px 0;">
+                        2. She drives <span class="answer-line"></span>.
+                    </p>
+
+                    <hr style="margin: 20px 0;">
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Fill in: <strong>slow</strong> or <strong>slowly</strong>
+                    </div>
+
+                    <p style="margin: 15px 0;">
+                        3. The <span class="answer-line"></span> turtle moves <span class="answer-line"></span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- VERSION C: Für stärkere SuS -->
+    <div class="ticket-section">
+        <div class="section-header">
+            Version C <span class="level-badge level-c">Advanced Level</span> - Für stärkere Schüler
+        </div>
+
+        <div class="ticket-container">
+            <!-- Ticket C1 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Write 2 sentences.
+                    </div>
+
+                    <p style="margin-top: 15px; margin-bottom: 5px;"><strong>1.</strong> One sentence with an <span class="highlight-green">adjective</span>:</p>
+                    <div class="sentence-box"></div>
+                    <p style="font-size: 8pt; color: #666; margin-top: 5px;">→ Underline the adjective in GREEN</p>
+
+                    <p style="margin-top: 15px; margin-bottom: 5px;"><strong>2.</strong> One sentence with an <span class="highlight-blue">adverb</span>:</p>
+                    <div class="sentence-box"></div>
+                    <p style="font-size: 8pt; color: #666; margin-top: 5px;">→ Underline the adverb in BLUE</p>
+                </div>
+            </div>
+
+            <!-- Ticket C2 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Write 2 sentences.
+                    </div>
+
+                    <p style="margin-top: 15px; margin-bottom: 5px;"><strong>1.</strong> One sentence with an <span class="highlight-green">adjective</span>:</p>
+                    <div class="sentence-box"></div>
+                    <p style="font-size: 8pt; color: #666; margin-top: 5px;">→ Underline the adjective in GREEN</p>
+
+                    <p style="margin-top: 15px; margin-bottom: 5px;"><strong>2.</strong> One sentence with an <span class="highlight-blue">adverb</span>:</p>
+                    <div class="sentence-box"></div>
+                    <p style="font-size: 8pt; color: #666; margin-top: 5px;">→ Underline the adverb in BLUE</p>
+                </div>
+            </div>
+
+            <!-- Ticket C3 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Write 2 sentences.
+                    </div>
+
+                    <p style="margin-top: 15px; margin-bottom: 5px;"><strong>1.</strong> One sentence with an <span class="highlight-green">adjective</span>:</p>
+                    <div class="sentence-box"></div>
+                    <p style="font-size: 8pt; color: #666; margin-top: 5px;">→ Underline the adjective in GREEN</p>
+
+                    <p style="margin-top: 15px; margin-bottom: 5px;"><strong>2.</strong> One sentence with an <span class="highlight-blue">adverb</span>:</p>
+                    <div class="sentence-box"></div>
+                    <p style="font-size: 8pt; color: #666; margin-top: 5px;">→ Underline the adverb in BLUE</p>
+                </div>
+            </div>
+
+            <!-- Ticket C4 -->
+            <div class="ticket">
+                <div class="ticket-title">Exit Ticket - Adjectives & Adverbs</div>
+                <div class="ticket-content">
+                    <p><strong>Name:</strong> <span class="name-line"></span></p>
+
+                    <div class="task-instruction">
+                        <strong>Task:</strong> Write 2 sentences.
+                    </div>
+
+                    <p style="margin-top: 15px; margin-bottom: 5px;"><strong>1.</strong> One sentence with an <span class="highlight-green">adjective</span>:</p>
+                    <div class="sentence-box"></div>
+                    <p style="font-size: 8pt; color: #666; margin-top: 5px;">→ Underline the adjective in GREEN</p>
+
+                    <p style="margin-top: 15px; margin-bottom: 5px;"><strong>2.</strong> One sentence with an <span class="highlight-blue">adverb</span>:</p>
+                    <div class="sentence-box"></div>
+                    <p style="font-size: 8pt; color: #666; margin-top: 5px;">→ Underline the adverb in BLUE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
