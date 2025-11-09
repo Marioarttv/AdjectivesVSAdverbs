@@ -19,41 +19,44 @@ Diese interaktive HTML-Präsentation begleitet den Unterrichtsentwurf zum Thema 
 
 ## 📊 Aufbau der Präsentation
 
-Die Präsentation folgt den 5 Phasen des Unterrichtsentwurfs:
+Die Präsentation folgt **strikt** den 5 Phasen des Unterrichtsentwurfs nach Ziegesar. Jede Folie hat einen klaren pädagogischen Zweck - **keine Redundanz**.
 
-### 1️⃣ **Phase 1: Demonstration (Folien 2-5)**
-- Einführung durch Tierbeispiele (Schildkröte, Gepard)
-- Kontextuelle Präsentation von Adjektiven und Adverbien
-- Visuelle Unterstützung mit Emojis
+### 1️⃣ **Phase 1: Demonstration (Folien 2-4)**
+**Ziel:** Passive Begegnung mit Strukturen in authentischem Kontext
+- Einführung durch kontrastierende Tierbeispiele (Schildkröte vs. Gepard)
+- Natürliche Verwendung von Adjektiven und Adverbien
+- KEINE explizite Erklärung
 
-### 2️⃣ **Phase 2: Verstehen und Reagieren (Folien 6-10)**
-- Erklärung: Was sind Adjektive?
-- Erklärung: Was sind Adverbien?
-- Show-me-Activity
-- Gegenüberstellung
+### 2️⃣ **Phase 2: Verstehen und Reagieren (Folien 5-8)**
+**Ziel:** Verständnis ohne eigene Produktion
+- Was sind Adjektive? (Nouns, WHAT KIND?)
+- Show-me-Activity (Daumen hoch/runter)
+- Was sind Adverbien? (Verbs, HOW?)
+- Visuelle Gegenüberstellung
 
-### 3️⃣ **Phase 3: Reproduzieren (Folien 11-14)**
+### 3️⃣ **Phase 3: Reproduzieren (Folien 9-11)**
+**Ziel:** Geleitete Reproduktion mit Gerüst
 - Bildungsregel: Adjective + -ly = Adverb
-- Gemeinsames Üben (Choral Repetition)
-- Lückentextübungen
+- Chorisches Sprechen (Choral Repetition)
+- Lückentext mit Wortbank
 
-### 4️⃣ **Phase 4: Bewusstmachung (Folien 15-20)**
-- Anchor Chart mit Grammatikregeln
-- Bildungsregel visualisiert
+### 4️⃣ **Phase 4: Bewusstmachung (Folien 12-13)**
+**Ziel:** Explizite Regelformulierung und Systematisierung
+- Anchor Chart (komplett: Funktion, Position, Beispiele, Regel)
 - Unregelmäßige Formen (good → well, fast → fast)
-- Position im Satz
-- Merkhilfen
 
-### 5️⃣ **Phase 5: Produzieren (Folien 21-24)**
-- Partnerarbeit: "Describe Your Day"
-- Sentence Frames als Hilfestellung
-- Zusätzliche Übungen
+### 5️⃣ **Phase 5: Produzieren (Folien 14-15)**
+**Ziel:** Freie Produktion in bedeutungsvollem Kontext
+- Partnerarbeit: "Describe Your Day" (authentische Kommunikation)
+- Sentence Frames (Differenzierung für schwächere SuS)
 
-### 📝 **Abschluss (Folien 25-30)**
-- Exit Ticket
+### 📝 **Abschluss (Folien 16-19)**
+- Exit Ticket (Lernstandskontrolle)
 - Hausaufgaben
-- Zusammenfassung
-- Referenzfolie (zum Ausdrucken)
+- Quick Reference Sheet (zum Ausdrucken)
+- Abschlussfolie
+
+**Gesamt: 19 Folien** (vorher: 30) - **keine Wiederholungen, jede Folie hat einen klaren Zweck**
 
 ## 🎨 Farbcodierung
 

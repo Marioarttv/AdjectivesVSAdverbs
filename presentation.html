@@ -88,12 +88,6 @@
         .cheetah {
             background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
         }
-        .girl {
-            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-        }
-        .student {
-            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-        }
         .anchor-chart {
             background: white;
             border: 4px solid #2c3e50;
@@ -109,17 +103,17 @@
             gap: 40px;
             text-align: left;
         }
-        .column {
-            padding: 20px;
-            border-radius: 10px;
-        }
         .green-column {
             background-color: #d5f4e6;
             border: 3px solid #27ae60;
+            padding: 20px;
+            border-radius: 10px;
         }
         .blue-column {
             background-color: #d6eaf8;
             border: 3px solid #2980b9;
+            padding: 20px;
+            border-radius: 10px;
         }
         .exercise-box {
             background-color: #f0f0f0;
@@ -156,13 +150,6 @@
             background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
             border-radius: 15px;
         }
-        .position-box {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            border-radius: 10px;
-            font-size: 1.1em;
-        }
         .exit-ticket {
             background-color: #fff9e6;
             border: 3px dashed #f39c12;
@@ -171,42 +158,56 @@
             margin: 20px auto;
             max-width: 700px;
         }
+        .phase-label {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: rgba(0,0,0,0.1);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.5em;
+            color: #666;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
 
-            <!-- TITEL-FOLIE -->
+            <!-- TITEL -->
             <section data-background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
                 <h1 style="color: white;">Adjectives vs Adverbs</h1>
                 <h3 style="color: white;">English Grammar - Klasse 7</h3>
                 <p style="color: white; margin-top: 50px;">📚 Learning about describing words!</p>
             </section>
 
-            <!-- PHASE 1: DEMONSTRATION - INTRO -->
+            <!-- ========== PHASE 1: DEMONSTRATION ========== -->
+            <!-- Goal: Passive input in authentic context -->
+
             <section>
+                <div class="phase-label">Phase 1: Demonstration</div>
                 <h2>Let's look at some animals!</h2>
                 <p class="big-text">🐢 🐆</p>
+                <p style="font-size: 0.8em; color: #666; margin-top: 40px;">Listen and watch carefully...</p>
             </section>
 
-            <!-- DEMONSTRATION: TURTLE -->
             <section>
+                <div class="phase-label">Phase 1: Demonstration</div>
                 <h2>The Turtle 🐢</h2>
                 <div class="image-box">
                     <div class="image-placeholder turtle">🐢</div>
                 </div>
                 <div class="example-box">
                     <p>Look at this animal!</p>
-                    <p>This is a <span class="adjective">slow</span> turtle.</p>
-                    <p>The turtle is very <span class="adjective">small</span> and <span class="adjective">green</span>.</p>
+                    <p>This is a <span class="adjective">slow</span> turtle. The turtle is <span class="adjective">small</span> and <span class="adjective">green</span>.</p>
                     <p>The turtle moves <span class="adverb">slowly</span> across the ground.</p>
-                    <p>The turtle swims <span class="adverb">happily</span> in the water.</p>
+                    <p>It swims <span class="adverb">happily</span> in the water.</p>
                 </div>
             </section>
 
-            <!-- DEMONSTRATION: CHEETAH -->
             <section>
+                <div class="phase-label">Phase 1: Demonstration</div>
                 <h2>The Cheetah 🐆</h2>
                 <div class="image-box">
                     <div class="image-placeholder cheetah">🐆</div>
@@ -215,44 +216,30 @@
                     <p>And here we have a <span class="adjective">fast</span> cheetah.</p>
                     <p>The cheetah is <span class="adjective">big</span> and <span class="adjective">strong</span>.</p>
                     <p>The cheetah runs <span class="adverb">quickly</span>!</p>
-                    <p>The cheetah runs <span class="adverb">fast</span> because it wants to catch its food.</p>
+                    <p>It runs <span class="adverb">fast</span> because it wants to catch its food.</p>
                 </div>
             </section>
 
-            <!-- DEMONSTRATION: MORE EXAMPLES -->
-            <section>
-                <h2>More Examples</h2>
-                <div class="image-container">
-                    <div class="image-box">
-                        <div class="image-placeholder girl">🎤</div>
-                        <p>A <span class="adjective">happy</span> girl sings<br><span class="adverb">beautifully</span></p>
-                    </div>
-                    <div class="image-box">
-                        <div class="image-placeholder student">📚</div>
-                        <p>A <span class="adjective">nervous</span> student walks<br><span class="adverb">carefully</span></p>
-                    </div>
-                </div>
-            </section>
+            <!-- ========== PHASE 2: VERSTEHEN UND REAGIEREN ========== -->
+            <!-- Goal: Understanding without production -->
 
-            <!-- PHASE 2: VERSTEHEN - ADJECTIVES -->
             <section>
+                <div class="phase-label">Phase 2: Understanding</div>
                 <h2>What are <span class="adjective">ADJECTIVES</span>?</h2>
                 <div class="green-column" style="padding: 40px; margin: 30px auto; max-width: 700px;">
                     <h3 style="color: #27ae60;">ADJECTIVES</h3>
                     <p style="font-size: 1.2em; margin: 20px 0;">✓ Describe <strong>NOUNS</strong></p>
-                    <p style="font-size: 1.2em; margin: 20px 0;">✓ Describe things, people, or animals</p>
-                    <p style="font-size: 1.2em; margin: 20px 0;">✓ Tell us: <strong>WHAT KIND?</strong></p>
+                    <p style="font-size: 1.2em; margin: 20px 0;">✓ Things, people, animals</p>
+                    <p style="font-size: 1.2em; margin: 20px 0;">✓ Answer: <strong>WHAT KIND?</strong></p>
                 </div>
                 <div class="example-box">
-                    <p>• The <span class="adjective">slow</span> turtle</p>
-                    <p>• The <span class="adjective">green</span> turtle</p>
-                    <p>• The <span class="adjective">big</span> cheetah</p>
-                    <p>• The <span class="adjective">happy</span> girl</p>
+                    <p>The <span class="adjective">slow</span> turtle | The <span class="adjective">green</span> turtle</p>
+                    <p>The <span class="adjective">big</span> cheetah | The <span class="adjective">fast</span> cheetah</p>
                 </div>
             </section>
 
-            <!-- ADJECTIVES: SHOW ME ACTIVITY -->
             <section>
+                <div class="phase-label">Phase 2: Understanding</div>
                 <h2>Show Me Activity! 👍👎</h2>
                 <div class="example-box">
                     <p style="font-size: 1.3em;">Is this the right adjective?</p>
@@ -262,34 +249,35 @@
                 </div>
             </section>
 
-            <!-- PHASE 2: VERSTEHEN - ADVERBS -->
             <section>
+                <div class="phase-label">Phase 2: Understanding</div>
                 <h2>What are <span class="adverb">ADVERBS</span>?</h2>
                 <div class="blue-column" style="padding: 40px; margin: 30px auto; max-width: 700px;">
                     <h3 style="color: #2980b9;">ADVERBS</h3>
                     <p style="font-size: 1.2em; margin: 20px 0;">✓ Describe <strong>VERBS</strong></p>
-                    <p style="font-size: 1.2em; margin: 20px 0;">✓ Describe actions</p>
-                    <p style="font-size: 1.2em; margin: 20px 0;">✓ Tell us: <strong>HOW?</strong></p>
+                    <p style="font-size: 1.2em; margin: 20px 0;">✓ Actions</p>
+                    <p style="font-size: 1.2em; margin: 20px 0;">✓ Answer: <strong>HOW?</strong></p>
                 </div>
                 <div class="example-box">
-                    <p>• The turtle moves <span class="adverb">slowly</span></p>
-                    <p>• The cheetah runs <span class="adverb">quickly</span></p>
-                    <p>• The girl sings <span class="adverb">beautifully</span></p>
-                    <p>• The student walks <span class="adverb">carefully</span></p>
+                    <p>The turtle moves <span class="adverb">slowly</span></p>
+                    <p>The cheetah runs <span class="adverb">quickly</span></p>
+                    <p>It swims <span class="adverb">happily</span></p>
                 </div>
             </section>
 
-            <!-- COMPARISON SLIDE -->
             <section>
+                <div class="phase-label">Phase 2: Understanding</div>
                 <h2>Can you see the difference?</h2>
                 <div class="two-columns" style="font-size: 1.1em;">
                     <div class="green-column">
+                        <h4 style="color: #27ae60; text-align: center;">ADJECTIVES</h4>
                         <p><span class="adjective">slow</span> turtle</p>
                         <p><span class="adjective">quick</span> breakfast</p>
                         <p><span class="adjective">beautiful</span> song</p>
                         <p><span class="adjective">careful</span> driver</p>
                     </div>
                     <div class="blue-column">
+                        <h4 style="color: #2980b9; text-align: center;">ADVERBS</h4>
                         <p>moves <span class="adverb">slowly</span></p>
                         <p>eats <span class="adverb">quickly</span></p>
                         <p>sings <span class="adverb">beautifully</span></p>
@@ -298,8 +286,11 @@
                 </div>
             </section>
 
-            <!-- PHASE 3: REPRODUZIEREN - REGEL -->
+            <!-- ========== PHASE 3: REPRODUZIEREN ========== -->
+            <!-- Goal: Guided reproduction with scaffolding -->
+
             <section>
+                <div class="phase-label">Phase 3: Reproduction</div>
                 <h2>How to make an ADVERB</h2>
                 <div class="formation-rule">
                     ADJECTIVE + -ly = ADVERB
@@ -312,8 +303,8 @@
                 </div>
             </section>
 
-            <!-- CHORAL REPETITION -->
             <section>
+                <div class="phase-label">Phase 3: Reproduction</div>
                 <h2>Let's practice together! 🗣️</h2>
                 <div class="example-box">
                     <p style="font-size: 1.3em; margin: 25px 0;">The <span class="adjective">slow</span> turtle</p>
@@ -321,10 +312,11 @@
                     <p style="font-size: 1.3em; margin: 25px 0;">The <span class="adjective">happy</span> girl</p>
                     <p style="font-size: 1.3em; margin: 25px 0;">The girl sings <span class="adverb">happily</span></p>
                 </div>
+                <p style="font-size: 0.8em; color: #666; margin-top: 30px;">Repeat after me!</p>
             </section>
 
-            <!-- ÜBUNG: LÜCKENTEXT -->
             <section>
+                <div class="phase-label">Phase 3: Reproduction</div>
                 <h2>Fill in the blanks</h2>
                 <div class="exercise-box">
                     <p><strong>Word Bank:</strong> slow, slowly, quick, quickly, beautiful, beautifully</p>
@@ -335,16 +327,20 @@
                 </div>
             </section>
 
-            <!-- PHASE 4: ANCHOR CHART -->
+            <!-- ========== PHASE 4: BEWUSSTMACHUNG ========== -->
+            <!-- Goal: Explicit rule formulation and systematization -->
+
             <section>
+                <div class="phase-label">Phase 4: Awareness</div>
                 <h2>Our Grammar Rules 📋</h2>
-                <div class="anchor-chart" style="font-size: 0.9em;">
+                <div class="anchor-chart" style="font-size: 0.85em;">
                     <div class="two-columns">
                         <div class="green-column">
                             <h3 style="color: #27ae60;">ADJECTIVES</h3>
                             <p><strong>Describe:</strong> NOUNS</p>
-                            <p>(people, things, animals)</p>
-                            <p><strong>Position:</strong><br>BEFORE the noun</p>
+                            <p><strong>Answer:</strong> WHAT KIND?</p>
+                            <p><strong>Position:</strong> BEFORE the noun</p>
+                            <hr style="margin: 15px 0;">
                             <p><strong>Examples:</strong></p>
                             <ul style="font-size: 0.95em;">
                                 <li>The <span class="adjective">slow</span> turtle</li>
@@ -355,8 +351,9 @@
                         <div class="blue-column">
                             <h3 style="color: #2980b9;">ADVERBS</h3>
                             <p><strong>Describe:</strong> VERBS</p>
-                            <p>(actions)</p>
-                            <p><strong>Position:</strong><br>AFTER the verb</p>
+                            <p><strong>Answer:</strong> HOW?</p>
+                            <p><strong>Position:</strong> AFTER the verb</p>
+                            <hr style="margin: 15px 0;">
                             <p><strong>Examples:</strong></p>
                             <ul style="font-size: 0.95em;">
                                 <li>moves <span class="adverb">slowly</span></li>
@@ -365,26 +362,14 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="formation-rule" style="margin-top: 25px; font-size: 1.1em;">
+                        Adjective + -ly = Adverb
+                    </div>
                 </div>
             </section>
 
-            <!-- REGEL MIT FORMATION -->
             <section>
-                <h2>The Rule</h2>
-                <div class="rule-box">
-                    <p style="font-size: 1.3em; margin: 20px 0;">
-                        <strong>Adjective + -ly = Adverb</strong>
-                    </p>
-                    <hr>
-                    <p style="margin: 15px 0;"><span class="adjective">careful</span> → <span class="adverb">carefully</span></p>
-                    <p style="margin: 15px 0;"><span class="adjective">quick</span> → <span class="adverb">quickly</span></p>
-                    <p style="margin: 15px 0;"><span class="adjective">slow</span> → <span class="adverb">slowly</span></p>
-                    <p style="margin: 15px 0;"><span class="adjective">beautiful</span> → <span class="adverb">beautifully</span></p>
-                </div>
-            </section>
-
-            <!-- IRREGULAR FORMS -->
-            <section>
+                <div class="phase-label">Phase 4: Awareness</div>
                 <h2>⚠️ Watch Out!</h2>
                 <h3>Irregular Forms</h3>
                 <div class="irregular-warning">
@@ -399,47 +384,16 @@
                     <p style="font-size: 1.1em; color: #27ae60;">✓ stays the same!</p>
                 </div>
                 <div class="example-box" style="margin-top: 30px;">
-                    <p>✓ He is a <span class="adjective">good</span> player.</p>
-                    <p>✓ He plays <span class="adverb">well</span>.</p>
+                    <p>✓ He is a <span class="adjective">good</span> player. He plays <span class="adverb">well</span>.</p>
                     <p>✓ The <span class="adjective">fast</span> car drives <span class="adverb">fast</span>.</p>
                 </div>
             </section>
 
-            <!-- POSITION IM SATZ -->
-            <section>
-                <h2>Where do they go in a sentence?</h2>
-                <div style="margin: 40px 0;">
-                    <div class="position-box green-column">
-                        <p><strong>ADJECTIVE</strong> → <strong>BEFORE</strong> the noun</p>
-                        <p style="margin-top: 15px;">The <span class="adjective">slow</span> turtle</p>
-                    </div>
-                </div>
-                <div style="margin: 40px 0;">
-                    <div class="position-box blue-column">
-                        <p><strong>ADVERB</strong> → <strong>AFTER</strong> the verb</p>
-                        <p style="margin-top: 15px;">The turtle moves <span class="adverb">slowly</span></p>
-                    </div>
-                </div>
-            </section>
+            <!-- ========== PHASE 5: PRODUZIEREN ========== -->
+            <!-- Goal: Free production in meaningful contexts -->
 
-            <!-- MEMORY HELP -->
             <section>
-                <h2>Memory Help! 🧠</h2>
-                <div class="rule-box" style="font-size: 1.1em;">
-                    <p style="margin: 25px 0;">
-                        <span class="adjective">Adjectives</span> describe nouns<br>
-                        → They tell us <strong>WHAT KIND</strong>
-                    </p>
-                    <hr>
-                    <p style="margin: 25px 0;">
-                        <span class="adverb">Adverbs</span> describe verbs<br>
-                        → They tell us <strong>HOW</strong>
-                    </p>
-                </div>
-            </section>
-
-            <!-- PHASE 5: PRODUCTION - AKTIVITÄT -->
-            <section>
+                <div class="phase-label">Phase 5: Production</div>
                 <h2>Now it's your turn! ✍️</h2>
                 <h3>Partner Activity: "Describe Your Day"</h3>
                 <div class="example-box">
@@ -448,12 +402,15 @@
                     <p style="margin-top: 20px;"><strong>Example:</strong></p>
                     <p>"I woke up <span class="adjective">early</span>. I was <span class="adjective">tired</span>. I ate a <span class="adjective">quick</span> breakfast. I ate <span class="adverb">quickly</span> because I was late."</p>
                 </div>
+                <p style="font-size: 0.8em; color: #666; margin-top: 30px;">Think → Pair → Share</p>
             </section>
 
-            <!-- SENTENCE FRAMES (HILFE) -->
             <section>
+                <div class="phase-label">Phase 5: Production</div>
                 <h2>Need help? Use these sentence starters:</h2>
                 <div class="exercise-box">
+                    <p style="color: #666; font-size: 0.9em; margin-bottom: 15px;">For students who need scaffolding:</p>
+                    <hr style="margin-bottom: 20px;">
                     <p>This morning I was _______ (adjective).</p>
                     <p>I ate a _______ (adjective) breakfast.</p>
                     <p>I ate _______ (adverb).</p>
@@ -463,28 +420,10 @@
                 </div>
             </section>
 
-            <!-- WEITERE ÜBUNGEN -->
-            <section>
-                <h2>More Practice Sentences</h2>
-                <div class="exercise-box">
-                    <p><strong>Choose the correct word:</strong></p>
-                    <p>1. She is a (beautiful / beautifully) singer.</p>
-                    <p>2. She sings (beautiful / beautifully).</p>
-                    <p>3. The (quick / quickly) rabbit runs (quick / quickly).</p>
-                    <p>4. He is a (good / well) student and works (good / well).</p>
-                    <p>5. The car is (fast / fast) and drives (fast / fast).</p>
-                </div>
-            </section>
+            <!-- ========== CLOSING ========== -->
 
-            <!-- EXIT TICKET INTRO -->
             <section>
-                <h2>Exit Ticket Time! 🎫</h2>
-                <p class="big-text">Let's see what you learned today!</p>
-            </section>
-
-            <!-- EXIT TICKET -->
-            <section>
-                <h2>Exit Ticket</h2>
+                <h2>Exit Ticket 🎫</h2>
                 <div class="exit-ticket">
                     <p><strong>Circle the adjectives GREEN and the adverbs BLUE:</strong></p>
                     <p style="margin: 20px 0; font-size: 1.2em;">1. The happy girl sings beautifully.</p>
@@ -496,7 +435,6 @@
                 </div>
             </section>
 
-            <!-- HAUSAUFGABEN -->
             <section>
                 <h2>Homework 📝</h2>
                 <div class="rule-box">
@@ -510,30 +448,15 @@
                 </div>
             </section>
 
-            <!-- ZUSAMMENFASSUNG -->
             <section>
-                <h2>What did we learn today?</h2>
-                <div class="anchor-chart" style="font-size: 1em;">
-                    <h3 style="color: #2c3e50;">Summary:</h3>
-                    <ul style="font-size: 1.1em;">
-                        <li><span class="adjective">Adjectives</span> describe nouns (WHAT KIND?)</li>
-                        <li><span class="adverb">Adverbs</span> describe verbs (HOW?)</li>
-                        <li>Most adverbs: adjective + <strong>-ly</strong></li>
-                        <li>Position: adjective <strong>before</strong> noun, adverb <strong>after</strong> verb</li>
-                        <li>Irregular: good → well, fast → fast</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- REFERENZ-FOLIE (zum Dranhängen) -->
-            <section>
-                <h2>Quick Reference Sheet</h2>
-                <div class="anchor-chart" style="font-size: 0.85em; text-align: left;">
+                <h2>Quick Reference Sheet 📄</h2>
+                <div class="anchor-chart" style="font-size: 0.8em;">
                     <div class="two-columns">
                         <div>
                             <h4 style="color: #27ae60;">ADJECTIVES</h4>
-                            <p>→ BEFORE noun</p>
-                            <p>→ WHAT KIND?</p>
+                            <p>→ Describe NOUNS</p>
+                            <p>→ BEFORE the noun</p>
+                            <p>→ Answer: WHAT KIND?</p>
                             <p style="margin-top: 15px;"><strong>Examples:</strong></p>
                             <ul style="font-size: 0.9em;">
                                 <li>slow, fast</li>
@@ -545,25 +468,29 @@
                         </div>
                         <div>
                             <h4 style="color: #2980b9;">ADVERBS</h4>
-                            <p>→ AFTER verb</p>
-                            <p>→ HOW?</p>
+                            <p>→ Describe VERBS</p>
+                            <p>→ AFTER the verb</p>
+                            <p>→ Answer: HOW?</p>
                             <p style="margin-top: 15px;"><strong>Examples:</strong></p>
                             <ul style="font-size: 0.9em;">
-                                <li>slowly, fast</li>
+                                <li>slowly, quickly</li>
                                 <li>happily, sadly</li>
                                 <li>beautifully</li>
-                                <li>carefully, quickly</li>
+                                <li>carefully</li>
                                 <li>well (not goodly!)</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="formation-rule" style="margin-top: 20px; font-size: 1.2em;">
+                    <div class="formation-rule" style="margin-top: 20px; font-size: 1.1em;">
                         Adjective + -ly = Adverb
                     </div>
+                    <div style="margin-top: 20px; padding: 15px; background-color: #ffe6e6; border-radius: 8px;">
+                        <p style="margin: 0; font-size: 0.9em;"><strong>⚠️ Irregular:</strong> good → well | fast → fast</p>
+                    </div>
                 </div>
+                <p style="font-size: 0.7em; color: #666; margin-top: 20px;">You can print this slide as a reference!</p>
             </section>
 
-            <!-- ABSCHLUSS -->
             <section data-background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
                 <h1 style="color: white;">Great Job! 🎉</h1>
                 <h3 style="color: white;">You now know the difference between</h3>
